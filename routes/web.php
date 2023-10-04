@@ -33,6 +33,11 @@ Route::middleware(['auth','role:agent'])->group(function(){
 
 });// end group agent middleware
 
+Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->name('admin.login');
+
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
