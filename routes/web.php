@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AgentController;
+use App\Http\Controllers\UserController;
 
 
 /*
@@ -16,10 +17,13 @@ use App\Http\Controllers\AgentController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+//user frontend all route
+Route::get('/',[UserController::class,'Index']);
 
 
 //admin group middleware
