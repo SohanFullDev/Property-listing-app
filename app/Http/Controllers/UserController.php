@@ -8,7 +8,7 @@ class UserController extends Controller
 {
 
     public function Index(){
-        return view('frontend.frontend_dashboard');
+        return view('frontend.home.index');
 
     }//end method
 
